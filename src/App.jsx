@@ -60,8 +60,8 @@ const App = () => {
   };
 
   return (
-    <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] 
-    bg-contain bg-no-repeat bg-gray-300 min-h-screen">
+    <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] transition-all duration-1000
+    bg-contain bg-no-repeat bg-gray-300 dark:bg-gray-800 min-h-screen dark:bg-[url('./assets/images/bg-mobile-dark.jpg')]">
       
       <Header />
 
@@ -84,7 +84,7 @@ const App = () => {
 
       </main>
 
-      <footer className="text-center mt-8">
+      <footer className="text-center mt-8 transition-all duration-1000 dark:text-gray-400">
         Drag and drop to reorder list
       </footer>
       
