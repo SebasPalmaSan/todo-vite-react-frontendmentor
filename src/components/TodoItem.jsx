@@ -1,12 +1,13 @@
 import IconCheck from "./icons/IconCheck";
 import IconCross from "./icons/IconCross";
+import React from "react";
 
-const TodoItem = ({ todo, updateTodo, removeTodo }) => {
+const TodoItem = React.forwardRef(({ todo, updateTodo, removeTodo, ...props }, ref) => {
 
     const { id, title, completed } = todo;
 
     return (
-        <article className="flex gap-4 border-b border-b-gray-400 dark:bg-gray-700">
+        <article {...props} ref={ref} className="flex gap-4 border-b border-b-gray-400 dark:bg-gray-700">
             <button className={`h-5 w-5 flex-none rounded-full border-2 ${completed ? "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-center items-center" : "inline-block"}`}
                 onClick={() => updateTodo(id)}
                 >
@@ -21,6 +22,6 @@ const TodoItem = ({ todo, updateTodo, removeTodo }) => {
             </button>
         </article>
     );
-};
+})
 
 export default TodoItem;
