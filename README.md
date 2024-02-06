@@ -1,5 +1,5 @@
 # React + Vite
-Challenge de Frontend Mentor: TODO realizado con React + TAILWIND CSS 
+Challenge de Frontend Mentor: TODO realizado con React + TAILWIND CSS con Drag and Drop
 
 Desktop
 ![todo desktop dark](https://github.com/SebasPalmaSan/todo-vite-react-frontendmentor/assets/93328462/36e930c9-70ac-4797-8a01-9fe6e85f9385)
